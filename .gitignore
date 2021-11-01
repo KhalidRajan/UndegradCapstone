@@ -1,0 +1,10 @@
+#ignore logs
+*.log
+#ignore training results
+*.model
+#ignore processed data files
+*.pt
+*.csv
+*.json
+#ignore ipynb checkpoints
+.ipynb_checkpoints
