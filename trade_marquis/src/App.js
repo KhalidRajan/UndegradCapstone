@@ -1,10 +1,15 @@
 import React from "react";
+import Navigation from "./navigation";
 import Landing from "./landing";
+
 
 function App(){
     return(
-        <Landing/>
-    )
+        <div>
+            <Navigation/>
+            <Landing/>
+        </div>
+    );
 }
 
 export default App;
