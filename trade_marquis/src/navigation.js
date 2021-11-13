@@ -11,8 +11,8 @@ function Navigation(){
                 </div>
                 <div class="navbar-menu">
                     <div class="navbar-end">
-                        <a class="navbar-item" href="/">About</a>
-                        <a class="navbar-item" href="/">The Team</a>
+                        <a class="navbar-item" href="/about">About</a>
+                        <a class="navbar-item" href="/team">The Team</a>
                     </div>
 
                 </div>

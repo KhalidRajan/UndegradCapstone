@@ -5,7 +5,7 @@
 .projectName{
     position: absolute;
     top: 150px;
-    left: 400px;
+    left: 200px;
     font-family: 'Dancing Script', cursive;
     font-size: 96px;
 }
@@ -13,7 +13,7 @@
 .typewrite{
     position: absolute;
     top: 275px;
-    left: 400px;
+    left: 200px;
     font-family: 'Comfortaa', cursive;
     font-size: 32px;
 }
@@ -21,18 +21,18 @@
 .landing-image{
     position: absolute;
     top: 70px;
-    right: 300px;
+    right: 100px;
 }
 .trademark-image{
     border-radius: 50%;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
 }
 
 .start-button{
     position: absolute;
     top: 350px;
-    left: 400px;
+    left: 200px;
 }
 
 .button{
