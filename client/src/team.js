@@ -21,7 +21,7 @@ function Team(){
                         <h1> Krishna Iyer</h1>
                         <img className={table.profile} src={require('./profile_pics/Krishna_profile.png').default} />
                         <p>
-                            Krishna is a senior computer engineering student. He enjoys watching movies, going swimming and
+                            Krishna is an undergraduate computer engineering student. He enjoys watching movies, going swimming and
                             playing video games. He has experience working with embedded systems and hopes to pursue 
                             a full-time career in this field after graduation.
                         </p>
@@ -34,9 +34,11 @@ function Team(){
                         </p>
                     </div>
                 </div>
-
+                <br></br>
+                <br></br>
                 <div className={table.row}>
                     <h1 className="supervisor_title"><b>The Supervisors</b></h1>
+                    <br></br>
                     <div className={table.column2}> 
                         <h1> Dr. Xiaodan Zhu</h1>
                         <img className={table.profile} src={require('./profile_pics/prof_Zhu_profile.jpg').default} />
@@ -61,7 +63,17 @@ function Team(){
             <div classname="cal">
                 <div className="company-logo">
                     <img className="CAL_logo" src="images/Conflict_Analytics_Lab.png"/>
+                    <h1><i>
+                        <b>About Conflict Analytics Lab:</b>
+                        <br></br>
+                        <br></br>
+                        The Conflict Analytics Lab is a research-based consortium concerned with the 
+                        application of data science and machine learning to dispute resolution. Conflict 
+                        analytics is the process of extracting actionable knowledge from negotiation, 
+                        mediation and settlement agreements such as customer disputes and employment negotiation.
+                    </i></h1>
                 </div>
+                
             </div>
         </div>
     )
