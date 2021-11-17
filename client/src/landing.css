@@ -1,0 +1,41 @@
+.landing{
+    position: relative;
+}
+
+.projectName{
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 96px;
+}
+
+.typewrite{
+    position: absolute;
+    top: 275px;
+    left: 200px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 32px;
+}
+
+.landing-image{
+    position: absolute;
+    top: 70px;
+    right: 100px;
+}
+.trademark-image{
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+}
+
+.start-button{
+    position: absolute;
+    top: 350px;
+    left: 200px;
+}
+
+.button{
+    width: 140px;
+    height: 60px;
+}
