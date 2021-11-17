@@ -13,7 +13,7 @@ function Team(){
                         <img className={table.profile} src={require('./profile_pics/Khalid_profile.png').default} />
                         <p>
                             Khalid is an undergraduate computer engineering student.  He has experience and interest in the Machine
-                            Learning and Software Development realms.  Khalid is an avid Arsenal and Toronto Raptors fan, he is a voracious reader,
+                            Learning and Software Development realms. Khalid is an avid Arsenal and Toronto Raptors fan, he is a voracious reader,
                             and he enjoys binge-watching series on Netflix/Amazon Prime.
                         </p>
                     </div>
@@ -34,11 +34,30 @@ function Team(){
                         </p>
                     </div>
                 </div>
-            </div>
-            <h1>The Supervisors</h1>
-            <div className="supervisors">
 
+                <div className={table.row}>
+                    <h1 className="supervisor_title"><b>The Supervisors</b></h1>
+                    <div className={table.column2}> 
+                        <h1> Dr. Xiaodan Zhu</h1>
+                        <img className={table.profile} src={require('./profile_pics/prof_Zhu_profile.jpg').default} />
+                        <p>
+                            Dr. Xiaodan Zhu is an Assistant Professor of the Department of Electrical and Computer Engineering. 
+                            He leads the Text Analytics and Machine Learning Lab (TAML). Dr. Zhu received his Ph.D. from the Department 
+                            of Computer Science at the University of Toronto in 2010 and his Masters of Engineering from the Department 
+                            of Computer Science and Technology at Tsinghua University in 2000. He was a researcher of National Research 
+                            Council Canada from 2010 to 2017.
+                        </p>
+                    </div>
+                    <div className={table.column2}> 
+                        <h1> Rohan Bhambhoria (PhD Candidate)</h1>
+                        <img className={table.profile} src={require('./profile_pics/Rohan_profile.jpeg').default} />
+                        <p>
+                            Interesting stuff about Rohan!
+                        </p>
+                    </div>
+                </div>
             </div>
+            
             <div classname="cal">
                 <div className="company-logo">
                     <img className="CAL_logo" src="images/Conflict_Analytics_Lab.png"/>
