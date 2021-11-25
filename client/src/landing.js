@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import Typewriter from "typewriter-effect";
 import "./landing.css";
 
@@ -28,7 +29,9 @@ function Landing(){
                 <img class="trademark-image" src="images/khalid.jpg"/>
             </div>
             <div class="start-button">
-                <button class="button is-primary">Try It Out!</button>
+                <button class="button is-primary">
+                    <Link to={"/form"}>Try It Out!</Link>
+                </button>
             </div>
         </div>
     );

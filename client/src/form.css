@@ -1,0 +1,10 @@
+.form{
+    position: center;
+    text-align: center;
+}
+
+#descriptor{
+    height : "200px";
+    width : "400px";
+    text-align: center;
+}
