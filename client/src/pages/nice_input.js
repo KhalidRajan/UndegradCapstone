@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles-css/form.css";
+import "../styles-css/nice_input.css";
 
 function Form(){
     return(
@@ -10,7 +10,7 @@ function Form(){
                     <br></br>
                     Describe the product(s) and/or service(s) that will be provided under this trademark:
                     <br></br>
-                    <textarea cols="80" rows="10" id="descriptor" type="text" name="descriptor"> Input description...</textarea>
+                    <textarea cols="50" rows="10" id="descriptor" type="text" name="descriptor"> Input description...</textarea>
                 </label>
                 <br></br>
                 <input type="submit" value="Submit"/>
