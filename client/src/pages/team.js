@@ -1,6 +1,6 @@
 import React from "react";
-import table from "./team.module.css"
-import "./team.css"
+import table from "../styles-css/team.module.css"
+import "../styles-css/team.css"
 
 function Team(){
     return(
@@ -10,7 +10,7 @@ function Team(){
                 <div className={table.row}>
                     <div className={table.column}>
                         <h1> Khalid Rajan</h1>
-                        <img className={table.profile} src={require('./profile_pics/Khalid_profile.png').default} />
+                        <img className={table.profile} src={require('../profile_pics/Khalid_profile.png').default} />
                         <p>
                             Khalid is an undergraduate computer engineering student.  He has experience and interest in the Machine
                             Learning and Software Development realms. Khalid is an avid Arsenal and Toronto Raptors fan, he is a voracious reader,
@@ -19,7 +19,7 @@ function Team(){
                     </div>
                     <div className={table.column}>
                         <h1> Krishna Iyer</h1>
-                        <img className={table.profile} src={require('./profile_pics/Krishna_profile.png').default} />
+                        <img className={table.profile} src={require('../profile_pics/Krishna_profile.png').default} />
                         <p>
                             Krishna is an undergraduate computer engineering student. He enjoys watching movies, going swimming and
                             playing video games. He has experience working with embedded systems and hopes to pursue 
@@ -28,7 +28,7 @@ function Team(){
                     </div>
                     <div className={table.column}> 
                         <h1> Adib Chisty</h1>
-                        <img className={table.profile} src={require('./profile_pics/Adib_profile.jpeg').default} />
+                        <img className={table.profile} src={require('../profile_pics/Adib_profile.jpeg').default} />
                         <p>
                             Interesting stuff about Adib!
                         </p>
@@ -41,7 +41,7 @@ function Team(){
                     <br></br>
                     <div className={table.column2}> 
                         <h1> Dr. Xiaodan Zhu</h1>
-                        <img className={table.profile} src={require('./profile_pics/prof_Zhu_profile.jpg').default} />
+                        <img className={table.profile} src={require('../profile_pics/prof_Zhu_profile.jpg').default} />
                         <p>
                             Dr. Xiaodan Zhu is an Assistant Professor of the Department of Electrical and Computer Engineering. 
                             He leads the Text Analytics and Machine Learning Lab (TAML). Dr. Zhu received his Ph.D. from the Department 
@@ -52,7 +52,7 @@ function Team(){
                     </div>
                     <div className={table.column2}> 
                         <h1> Rohan Bhambhoria (PhD Candidate)</h1>
-                        <img className={table.profile} src={require('./profile_pics/Rohan_profile.jpeg').default} />
+                        <img className={table.profile} src={require('../profile_pics/Rohan_profile.jpeg').default} />
                         <p>
                             Interesting stuff about Rohan!
                         </p>

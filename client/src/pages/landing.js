@@ -1,7 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import Typewriter from "typewriter-effect";
-import "./landing.css";
+import "../styles-css/landing.css";
 
 function Landing(){
     return(
