@@ -30,7 +30,7 @@ function Landing(){
             </div>
             <div class="start-button">
                 <button class="button is-primary">
-                    <Link to={"/nice-input"}>Try It Out!</Link>
+                    <Link to={"/model-select"}>Try It Out!</Link>
                 </button>
             </div>
         </div>

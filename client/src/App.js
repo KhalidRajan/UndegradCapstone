@@ -4,6 +4,8 @@ import Landing from "./pages/landing";
 import About from "./pages/about";
 import Team from "./pages/team";
 import Nice from "./pages/nice_input";
+import TMAnalyze from "./pages/tm_analyzer"
+import ModelSelect from "./pages/model_selection"
 
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
@@ -18,6 +20,8 @@ function App(){
                 <Route path="/about" element={<About/>}/>
                 <Route path="/team" element={<Team/>}/>
                 <Route path="/nice-input" element={<Nice/>}/>
+                <Route path="/tm-analyze-input" element={<TMAnalyze/>}/>
+                <Route path="/model-select" element={<ModelSelect/>}/>
             </Routes>
         </BrowserRouter>
     );
