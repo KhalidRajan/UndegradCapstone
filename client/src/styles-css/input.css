@@ -1,0 +1,29 @@
+.form{
+    position: center;
+    text-align: center;
+}
+
+.background{
+    background-image: url("../input_background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+.title{
+    font-family: 'Comfortaa', cursive;
+    font-size: 32px;
+    position: relative;
+    color: green;
+}
+
+#descriptor{
+    height : "200px";
+    width : "400px";
+    text-align: center;
+}
