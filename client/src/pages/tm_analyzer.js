@@ -1,14 +1,14 @@
 import React from "react";
 import Uploady from "@rpldy/uploady";
 import UploadButton from "@rpldy/upload-button"
-import "../styles-css/input.css";
+import Input from "../styles-css/input.module.css"
 
 function TMAnalyze(){
     return(
-        <div className="background">
-            <div className="form">
-                <h1 className="title">Trademark Analyzer Input</h1>
-                <h1 className="title">Trademark Analyzer Input</h1>
+        <div className={Input.background}>
+            <div className={Input.form}>
+                <h1 className={Input.title}>Trademark Analyzer Input</h1>
+                <h1 className={Input.title}>Trademark Analyzer Input</h1>
                 <br></br>
                 <p>Upload trademark as image:</p>
                 <br></br>
