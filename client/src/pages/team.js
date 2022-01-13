@@ -9,7 +9,7 @@ function Team(){
             <div className="profiles">
                 <div className={table.row}>
                     <div className={table.column}>
-                        <h1> Khalid Rajan</h1>
+                        <h1 className="person-name"> Khalid Rajan</h1>
                         <img className={table.profile} src={require('../profile_pics/Khalid_profile.png').default} />
                         <p>
                             Khalid is an undergraduate computer engineering student.  He has experience and interest in the Machine
@@ -18,7 +18,7 @@ function Team(){
                         </p>
                     </div>
                     <div className={table.column}>
-                        <h1> Krishna Iyer</h1>
+                        <h1 className="person-name">Krishna Iyer</h1>
                         <img className={table.profile} src={require('../profile_pics/Krishna_profile.png').default} />
                         <p>
                             Krishna is an undergraduate computer engineering student. He enjoys watching movies, going swimming and
@@ -27,7 +27,7 @@ function Team(){
                         </p>
                     </div>
                     <div className={table.column}> 
-                        <h1> Adib Chisty</h1>
+                        <h1 className="person-name"> Adib Chisty</h1>
                         <img className={table.profile} src={require('../profile_pics/Adib_profile.jpeg').default} />
                         <p>
                             Interesting stuff about Adib!
@@ -37,10 +37,10 @@ function Team(){
                 <br></br>
                 <br></br>
                 <div className={table.row}>
-                    <h1 className="supervisor_title"><b>The Supervisors</b></h1>
+                    <h1 className="supervisor_title">The Supervisors</h1>
                     <br></br>
                     <div className={table.column2}> 
-                        <h1> Dr. Xiaodan Zhu</h1>
+                        <h1 className="person-name"> Dr. Xiaodan Zhu</h1>
                         <img className={table.profile} src={require('../profile_pics/prof_Zhu_profile.jpg').default} />
                         <p>
                             Dr. Xiaodan Zhu is an Assistant Professor of the Department of Electrical and Computer Engineering. 
@@ -51,7 +51,7 @@ function Team(){
                         </p>
                     </div>
                     <div className={table.column2}> 
-                        <h1> Rohan Bhambhoria (PhD Candidate)</h1>
+                        <h1 className="person-name"> Rohan Bhambhoria (PhD Candidate)</h1>
                         <img className={table.profile} src={require('../profile_pics/Rohan_profile.jpeg').default} />
                         <p>
                             Interesting stuff about Rohan!
@@ -63,15 +63,15 @@ function Team(){
             <div classname="cal">
                 <div className="company-logo">
                     <img className="CAL_logo" src="images/Conflict_Analytics_Lab.png"/>
-                    <h1><i>
-                        <b>About Conflict Analytics Lab:</b>
+                    <h1><i><b>About Conflict Analytics Lab:</b></i></h1>
                         <br></br>
-                        <br></br>
-                        The Conflict Analytics Lab is a research-based consortium concerned with the 
-                        application of data science and machine learning to dispute resolution. Conflict 
-                        analytics is the process of extracting actionable knowledge from negotiation, 
-                        mediation and settlement agreements such as customer disputes and employment negotiation.
-                    </i></h1>
+                        <br/>
+                        <p className="CAL_text">
+                            The Conflict Analytics Lab is a research-based consortium concerned with the 
+                            application of data science and machine learning to dispute resolution. Conflict 
+                            analytics is the process of extracting actionable knowledge from negotiation, 
+                            mediation and settlement agreements such as customer disputes and employment negotiation.
+                        </p>
                 </div>
                 
             </div>

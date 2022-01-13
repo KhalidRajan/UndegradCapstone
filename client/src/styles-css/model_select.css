@@ -1,0 +1,49 @@
+.model-select{
+    position: relative;
+}
+
+
+.section-title{
+    position: absolute;
+    margin: auto;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.title-text{
+    font-family: 'Rubik', sans-serif;
+    font-size: 32px;
+}
+
+.products{
+    display: flex;
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.product1{
+    margin-right: 25px;
+    
+}
+
+.product2{
+    margin-left:25px;
+}
+
+.nice-button{
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.logo-button{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.link-text{
+    color: white;
+}

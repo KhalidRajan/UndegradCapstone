@@ -1,6 +1,6 @@
 import React from "react";
-import Uploady from "@rpldy/uploady";
-import UploadButton from "@rpldy/upload-button"
+// import Uploady from "@rpldy/uploady";
+// import UploadButton from "@rpldy/upload-button"
 import Input from "../styles-css/input.module.css"
 
 function TMAnalyze(){
@@ -13,9 +13,9 @@ function TMAnalyze(){
                 <form>
                     <p>Upload trademark as image:</p>
                     <br></br>
-                    <Uploady destination={{url: process.env.UPLOAD_URL}}>
+                    {/* <Uploady destination={{url: process.env.UPLOAD_URL}}>
                         <UploadButton>Upload image</UploadButton>
-                    </Uploady>
+                    </Uploady> */}
                     <br></br>
                     <br></br>
                     <p>Upload word mark:</p>
