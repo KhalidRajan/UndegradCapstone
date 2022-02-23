@@ -18,20 +18,8 @@
 }
 
 .products{
-    display: flex;
     position: absolute;
-    top: 500px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.product1{
-    margin-right: 25px;
-    
-}
-
-.product2{
-    margin-left:25px;
+    top: 250px;
 }
 
 .nice-button{
