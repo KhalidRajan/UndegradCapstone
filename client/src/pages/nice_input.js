@@ -1,25 +1,37 @@
 import React from "react";
 import Input from "../styles-css/input.module.css"
+import Typing from "react-typing-animation";
 
-function Form(){
+function NiceInput(){
     return(
-        <div className={Input.background}>
+
+        <div className="nice-input">
             <div className={Input.form}>
-                <h1 className={Input.title}>Input information for NICE classifier</h1>
-                <form>
-                    <label><h1 className={Input.title}>Input information for NICE Classifier</h1></label>
-                    <label>
-                        <br></br>
-                        Describe the product(s) and/or service(s) that will be provided under this trademark:
-                        <br></br>
-                        <textarea cols="50" rows="10" id={Input.descriptor} type="text" name="descriptor"> Input description...</textarea>
-                    </label>
-                    <br></br>
-                    <input type="submit" value="Submit"/>
-                </form>
+                <div className={Input.title}>
+                <Typing>
+                    <h1 className={Input.title_text}>NICE Category Classifier</h1>
+                </Typing>
+                </div>
+            </div>
+            <div className={Input.inputSection}>
+                <div class="columns">
+                    <div class="column is-full">
+                        <div className={Input.instruction}>
+                            <p>Enter a product description or keywords to describe the products/services that will be offered under this trademark: </p>
+                        </div>
+
+                        <div className={Input.textArea}>
+                            <textarea class="textarea is-link" placeholder="Enter your text here..."></textarea>
+                        </div>
+                        <div className={Input.button}>
+                            <button class="button is-link">Go!</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
     )
 }
 
-export default Form;
+export default NiceInput;

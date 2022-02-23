@@ -1,29 +1,38 @@
 .form{
-    position: center;
-    text-align: center;
-}
-
-.background{
-    background-image: url("../input_background.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    top: 0;
+    position: relative;
 }
 
 .title{
-    font-family: 'Comfortaa', cursive;
-    font-size: 32px;
-    position: relative;
-    color: green;
+    position: absolute;
+    margin: auto;
+    top: 75px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
-#descriptor{
-    height : "200px";
-    width : "400px";
-    text-align: center;
+.title_text{
+    font-family: 'Rubik', sans-serif;
+    font-size: 32px;
+}
+
+.inputSection{
+    position: absolute;
+    margin: auto;
+    top: 250px;
+    left: 70px;
+}
+
+.instruction{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.textArea{
+    margin-top: 10px;
+}
+
+.button{
+    margin-top: 10px;
+    margin-left: 84%;
+
 }
