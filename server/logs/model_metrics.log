@@ -1,0 +1,4 @@
+2022-01-20T18:52:00,321 - HandlerTime.Milliseconds:3791.95|#ModelName:nice_dbert,Level:Model|#hostname:MeshifyC,requestID:2c64d1ae-5e21-42a3-b49a-b2671c023c08,timestamp:1642722720
+2022-01-20T18:52:00,321 - PredictionTime.Milliseconds:3791.95|#ModelName:nice_dbert,Level:Model|#hostname:MeshifyC,requestID:2c64d1ae-5e21-42a3-b49a-b2671c023c08,timestamp:1642722720
+2022-01-20T18:52:38,128 - HandlerTime.Milliseconds:55.36|#ModelName:nice_dbert,Level:Model|#hostname:MeshifyC,requestID:92e0258c-0e3d-437d-adf7-4b8975799e51,timestamp:1642722758
+2022-01-20T18:52:38,128 - PredictionTime.Milliseconds:55.36|#ModelName:nice_dbert,Level:Model|#hostname:MeshifyC,requestID:92e0258c-0e3d-437d-adf7-4b8975799e51,timestamp:1642722758
