@@ -1,12 +1,46 @@
 import React from "react";
-// import Uploady from "@rpldy/uploady";
-// import UploadButton from "@rpldy/upload-button"
-import Input from "../styles-css/input.module.css"
+import Typing from "react-typing-animation";
+import Input from "../styles-css/input.module.css";
 
 function TMAnalyze(){
     return(
 
         <div className="logo-similarity">
+            <div className="nice-input">
+            <div className={Input.form}>
+                <div className={Input.title}>
+                <Typing>
+                    <h1 className={Input.title_text}>Logo Similarity Detector</h1>
+                </Typing>
+                </div>
+            </div>
+            <div className={Input.imgUpload}>
+                <div class="columns">
+                    <div class="column is-full">
+                        <div className={Input.instruction}>
+                            <p>Upload an image of your trademark logo (.png, .jpg):</p>
+                        </div>
+                        <div class="file is-boxed">
+                            <label class="file-label">
+                                <input class="file-input" type="file" name="logo"/>
+                                    <span class="file-cta">
+                                        <span class="file-icon">
+                                            <i class="fa fa-upload"></i>
+                                        </span>
+                                        <span class="file-label">
+                                            Upload an image of your logo (.png, .jpg)
+                                        </span>
+                                    </span>
+                            </label>
+                        </div>
+                        <div className={Input.button}>
+                            <button class="button is-link">Go!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
             
         </div>
 

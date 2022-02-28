@@ -26,8 +26,19 @@
     margin-top: 50px;
 }
 
+.imgUpload{
+    position: absolute;
+    margin: auto;
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 50px;
+}
+
 .instruction{
     font-family: 'Open Sans', sans-serif;
+    margin-bottom: 10px;
 }
 
 .textArea{
@@ -36,5 +47,4 @@
 
 .button{
     margin-top: 10px;
-
 }
