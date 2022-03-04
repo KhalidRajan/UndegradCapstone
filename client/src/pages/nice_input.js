@@ -1,8 +1,39 @@
-import React from "react";
+import axios from 'axios';
 import Input from "../styles-css/input.module.css"
 import Typing from "react-typing-animation";
+import { Link } from "react-router-dom";
+
+let nice_output;
+
+async function postData(){
+
+    const ax_headers = {
+        'Accept': 'application/json',
+        'Content-type': 'text/html'
+    }
+
+    var input_text = '';
+    
+    input_text = document.getElementById("inputText").value;
+
+    var config = {
+        method: 'post',
+        url: '/predictions/nice-dbert',
+        data: input_text,
+        headers: ax_headers
+    }
+
+    axios(config).then(function (resp){
+        nice_output = resp;
+        alert(JSON.stringify(resp.data));
+    }).catch(function(e){
+        console.log(e);
+    });
+
+}
 
 function NiceInput(){
+
     return(
 
         <div className="nice-input">
@@ -21,10 +52,12 @@ function NiceInput(){
                         </div>
 
                         <div className={Input.textArea}>
-                            <textarea class="textarea is-link" placeholder="Enter your text here..."></textarea>
+                            <textarea id="inputText" class="textarea is-link" placeholder="Enter your text here..."></textarea>
                         </div>
                         <div className={Input.button}>
-                            <button class="button is-link">Go!</button>
+                            <Link to={"/nice-output"}>
+                                <button class="button is-link" onClick={ () => postData()}>Go!</button>
+                            </Link>
                         </div>
                     </div>
                 </div>

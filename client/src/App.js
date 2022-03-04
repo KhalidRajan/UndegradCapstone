@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navigation from "./pages/navigation";
 import Landing from "./pages/landing";
 import About from "./pages/about";
@@ -14,6 +14,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 
 function App(){
+
     return(
         <BrowserRouter>
             <Navigation/>
