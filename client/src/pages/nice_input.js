@@ -1,7 +1,6 @@
 import axios from 'axios';
 import Input from "../styles-css/input.module.css"
 import Typing from "react-typing-animation";
-import { Link } from "react-router-dom";
 import React, { useState } from 'react';
 import nice_mapping from "./nice_map";
 
@@ -10,11 +9,11 @@ import nice_mapping from "./nice_map";
 
 function NiceInput(){
 
-    const [nice_in, setNiceIn]=useState("");
-
     const [disp_output, setDispOutput]=useState(false);
 
     const [nice_cat, setNiceCat]=useState("");
+    
+    const [nice_cat_desc, setNiceCatDesc]=useState("");
 
     const postData=()=>{
 
@@ -27,24 +26,21 @@ function NiceInput(){
         
         input_text = document.getElementById("inputText").value;
 
-        setNiceIn(input_text)
-
-
+        var config = {
+            method: 'post',
+            url: '/predictions/nice-dbert',
+            data: input_text,
+            headers: ax_headers
+        }
     
-        // var config = {
-        //     method: 'post',
-        //     url: '/predictions/nice-dbert',
-        //     data: input_text,
-        //     headers: ax_headers
-        // }
-    
-        // axios(config).then(function (resp){
-        //     alert(JSON.stringify(resp.data));
-        setDispOutput(true);
-        setNiceCat("NICE_25");
-        // }).catch(function(e){
-        //     console.log(e);
-        // });
+        axios(config).then(function (resp){
+            var category = resp.data.slice(5);
+            setDispOutput(true);
+            setNiceCat(category);
+            setNiceCatDesc(nice_mapping[resp.data]);
+        }).catch(function(e){
+            console.log(e);
+        });
     
     }
 
@@ -84,7 +80,7 @@ function NiceInput(){
                         <p className={Input.content}>The product/service belongs to Nice Category {nice_cat}.</p>
                     </div>
                     <div className="notification is-success">
-                        <p className={Input.content}>This category includes : {nice_mapping[nice_cat]}</p>
+                        <p className={Input.content}>This category includes : {nice_cat_desc}</p>
                     </div>
                 </div>
             </div>:""}
