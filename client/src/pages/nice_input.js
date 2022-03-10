@@ -2,37 +2,54 @@ import axios from 'axios';
 import Input from "../styles-css/input.module.css"
 import Typing from "react-typing-animation";
 import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import nice_mapping from "./nice_map";
 
-let nice_output;
 
-async function postData(){
 
-    const ax_headers = {
-        'Accept': 'application/json',
-        'Content-type': 'text/html'
-    }
-
-    var input_text = '';
-    
-    input_text = document.getElementById("inputText").value;
-
-    var config = {
-        method: 'post',
-        url: '/predictions/nice-dbert',
-        data: input_text,
-        headers: ax_headers
-    }
-
-    axios(config).then(function (resp){
-        nice_output = resp;
-        alert(JSON.stringify(resp.data));
-    }).catch(function(e){
-        console.log(e);
-    });
-
-}
 
 function NiceInput(){
+
+    const [nice_in, setNiceIn]=useState("");
+
+    const [disp_output, setDispOutput]=useState(false);
+
+    const [nice_cat, setNiceCat]=useState("");
+
+    const postData=()=>{
+
+        const ax_headers = {
+            'Accept': 'application/json',
+            'Content-type': 'text/html'
+        }
+    
+        var input_text = '';
+        
+        input_text = document.getElementById("inputText").value;
+
+        setNiceIn(input_text)
+
+
+    
+        // var config = {
+        //     method: 'post',
+        //     url: '/predictions/nice-dbert',
+        //     data: input_text,
+        //     headers: ax_headers
+        // }
+    
+        // axios(config).then(function (resp){
+        //     alert(JSON.stringify(resp.data));
+        setDispOutput(true);
+        setNiceCat("NICE_25");
+        // }).catch(function(e){
+        //     console.log(e);
+        // });
+    
+    }
+
+
+
 
     return(
 
@@ -55,13 +72,22 @@ function NiceInput(){
                             <textarea id="inputText" class="textarea is-link" placeholder="Enter your text here..."></textarea>
                         </div>
                         <div className={Input.button}>
-                            <Link to={"/nice-output"}>
                                 <button class="button is-link" onClick={ () => postData()}>Go!</button>
-                            </Link>
                         </div>
                     </div>
                 </div>
             </div>
+            {disp_output?
+            <div className={Input.outputSection}>
+                <div className="container is-fluid">
+                    <div className="notification is-info">
+                        <p className={Input.content}>The product/service belongs to Nice Category {nice_cat}.</p>
+                    </div>
+                    <div className="notification is-success">
+                        <p className={Input.content}>This category includes : {nice_mapping[nice_cat]}</p>
+                    </div>
+                </div>
+            </div>:""}
         </div>
 
     )

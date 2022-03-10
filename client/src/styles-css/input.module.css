@@ -1,3 +1,7 @@
+/* .nice-input{
+    position: relative;
+} */
+
 .form{
     position: relative;
 }
@@ -47,4 +51,18 @@
 
 .button{
     margin-top: 10px;
+}
+
+.outputSection{
+    position: absolute;
+    margin: auto;
+    top:75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.content{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
 }
