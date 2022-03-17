@@ -1,9 +1,21 @@
 import React from "react";
 import Typing from "react-typing-animation";
 import Input from "../styles-css/input.module.css";
+import { useState } from 'react';
 
 function TMAnalyze(){
+
+    const [disp_output, setDispOutput]=useState(false);
+    const [similarity_score, setSimilarityScore]=useState(0.0);
+
+    const postData=()=>{
+        setDispOutput(true);
+        setSimilarityScore(0.37);
+    }
+
+
     return(
+
 
         <div className="logo-similarity">
             <div className="nice-input">
@@ -51,11 +63,20 @@ function TMAnalyze(){
                             </div>
                         </div>
                         <div className={Input.uploadButton}>
-                            <button class="button is-link">Go!</button>
+                            <button class="button is-link" onClick={ () => postData()}>Go!</button>
                         </div>
                     </div>
                 </div>
             </div>
+            {disp_output?
+            <div className={Input.outputSection}>
+                <div className="container is-fluid">
+                    <div className="notification is-info">
+                        <p className={Input.content}>The two images have a similarity score of {similarity_score}.</p>
+                    </div>
+
+                </div>
+            </div>:""}
         </div>
 
             
