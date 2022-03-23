@@ -55,6 +55,8 @@ function TMAnalyze(){
         console.log(resp["data"]);
 
         postData(resp["data"]);
+
+  
     }
 
 
@@ -116,6 +118,7 @@ function TMAnalyze(){
             <div className={Input.outputSection}>
                 <div className="container is-fluid">
                     <div className="notification is-info">
+                        <meter value={similarity_score} min="0.00" max="5.00" optimum="0.10">{similarity_score}</meter>
                         <p className={Input.content}>The two images have a similarity score of {similarity_score}.</p>
                     </div>
 
