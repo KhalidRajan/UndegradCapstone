@@ -7,18 +7,26 @@ function TMAnalyze(){
 
     const [disp_output, setDispOutput]=useState(false);
     const [similarity_score, setSimilarityScore]=useState(0.0);
+    
+    const [img1, setImg1] = useState();
+    const [img2, setImg2] = useState();
+    
     const [logo_str1, setLogoStr1] = useState();
     const [logo_str2, setLogoStr2] = useState();
     
+    const [prev1, setPrev1] = useState(false);
+    const [prev2, setPrev2] = useState(false);
     
     const postData=(score)=>{
         setDispOutput(true);
         let score_rounded = score.toFixed(2);
-        setSimilarityScore(score_rounded);
+        setSimilarityScore(score);
     }
 
     const fileSelectHandler = (e) => {
         let img = e.target.files[0];
+        setImg1(URL.createObjectURL(img));
+        setPrev1(true);
 
         var reader = new FileReader();
 
@@ -31,6 +39,8 @@ function TMAnalyze(){
 
     const fileSelectHandler2 = (e) => {
         let img = e.target.files[0]
+        setImg2(URL.createObjectURL(img));
+        setPrev2(true);
 
         var reader = new FileReader();
 
@@ -52,11 +62,15 @@ function TMAnalyze(){
             headers:{ "Content-Type": "application/json" }
         });
 
-        console.log(resp["data"]);
+        setPrev1(false);
+        setPrev2(false);
+
+        //console.log(resp["data"]);
 
         postData(resp["data"]);
 
-  
+        console.log(img1);
+        console.log(img2);
     }
 
 
@@ -114,6 +128,27 @@ function TMAnalyze(){
                     </div>
                 </div>
             </div>
+            {!disp_output?
+            <div className={Input.outputSection2}>
+                {prev1?
+                <div>
+                    <div>
+                        <div>
+                            <h1>Image 1</h1>
+                            <img src={img1} width="200px" height="200px"/>
+                        </div>
+                    </div>
+                </div>:""}
+                {prev2?
+                <div>
+                    <div>
+                        <div>
+                            <h1>Image 2</h1>
+                            <img src={img2} width="200px" height="200px"/>
+                        </div>
+                    </div>
+                </div>:""}
+            </div>:""}
             {disp_output?
             <div className={Input.outputSection}>
                 <div className="container is-fluid">
